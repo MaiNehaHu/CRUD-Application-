@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 2</title>
+
+    <style>
+        *{
+        margin: 0;
+        }
+        body{
+        background-color: cornflowerblue;
+        }
+       h1{
+        text-align: center;
+        margin: 20px;
+       }
+       #button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       #OKbtn{
+        font-weight: bold;
+        height: 4.5vh;
+        margin-top: 20px;
+        border-radius: 5px;
+        background-color: rgb(148, 148, 255);
+       }
+       #OKbtn:hover{
+        background-color: blue;
+       }
+       .Add-RemoveBtns{
+        width: 47%;
+        margin: 3px;
+        padding: 5px;
+        font-weight: bolder;
+        border: 2px solid black;
+        border-radius: 5px;
+        box-shadow: 2px 5px 7px black  ;
+        background-color:rgb(255, 225, 57);
+       }
+       .Add-RemoveBtns:hover{
+        background-color: yellow;
+       }
+       #input{
+        background-color: floralwhite;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-weight: bold;
+        height: 4vh;
+        width: 70vw;
+        margin-top: 20px;
+        display: inline-flexbox;
+       }
+       #box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       }
+       h3{
+        margin-top: 20px;
+       }
+       p{
+        margin-top: 25px;
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4vh;
+        width: 70vw;
+       }
+       span{
+        margin-top: 20px;
+        font-size: 27px;
+       }
+    </style>
+</head>
+<body >
+    <h1>To do list🤩</h1>
+    <div id="button">
+    <button class="Add-RemoveBtns"  onclick="addonemore()">➕Add</button>
+    <button class="Add-RemoveBtns" onclick="removeone()">➖Remove</button>
+    </div>
+    
+    <ul id="chap_list">
+        <li  id="box">
+            <span>✨</span>
+            <input type="text" id="input" placeholder="Enter task"></input>
+            <button onclick="OKbtn(this)" id="OKbtn">OK</button>
+        </li>
+    </ul>
+    
+    <script src="/apps/CRUDapp2.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+main{
+    margin: 50px;
+}
+.list-group-item{
+    margin-top: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: row;
+}
+#input{
+    width: max-content;
+}
+#remove,#edit,#changed{
+    margin: 3px;
+}
+button{
+    border: none;
+    background-color: white;
+}
